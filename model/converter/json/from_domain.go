@@ -185,6 +185,8 @@ func DependenciesFromDomain(dependencyLinks []model.DependencyLink) []json.Depen
 				Parent:    dependencyLink.Parent,
 				Child:     dependencyLink.Child,
 				CallCount: dependencyLink.CallCount,
+				Instance:  dependencyLink.Instance,
+				Namespace: dependencyLink.Namespace,
 			},
 		)
 	}

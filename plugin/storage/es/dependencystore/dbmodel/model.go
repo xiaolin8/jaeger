@@ -26,5 +26,7 @@ type TimeDependencies struct {
 type DependencyLink struct {
 	Parent    string `json:"parent"`
 	Child     string `json:"child"`
+	Instance  string `json:"instance"`
+	Namespace string `json:"namespace"`
 	CallCount uint64 `json:"callCount"`
 }

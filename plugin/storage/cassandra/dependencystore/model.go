@@ -25,6 +25,8 @@ import (
 type Dependency struct {
 	Parent    string `cql:"parent"`
 	Child     string `cql:"child"`
+	Instance  string `cql:"Instance"`
+	Namespace string `cql:"namespace"`
 	CallCount int64  `cql:"call_count"` // always unsigned, but we cannot explicitly read uint64 from Cassandra
 	Source    string `cql:"source"`
 }
